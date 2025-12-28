@@ -16,3 +16,17 @@ https://github.com/user-attachments/assets/b16fab15-00bd-4106-a676-b0cfbd32c890
 ## See
 
 https://github.com/vuejs/language-tools/issues/5909
+
+
+## ✅ Solution
+
+Please use `GlobalDirectives` interface instead.
+
+```ts
+declare module "vue" {
+  export interface GlobalDirectives {
+    /** a custom directive */
+    vLoading: any
+  }
+}
+```
